@@ -1,4 +1,4 @@
-# MinicraftLobbyTreasure
+# LobbyTreasureSigns
 
 A Minecraft Spigot plugin designed for lobby environments that allows players to find hidden treasures represented by signs.
 
