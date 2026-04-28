@@ -1,0 +1,98 @@
+# Configuration file for MinicraftLobbyTreasure
+
+# --- DOKUMENTACE ---
+# Placeholdery (vyzaduje PlaceholderAPI):
+# %mcpoklad_found_count% - Pocet nalezenych pokladu hrace
+# %mcpoklad_total_count% - Celkovy pocet vsech pokladu na serveru
+#
+# Permise:
+# mcpoklad.admin - Pristup ke vsem admin prikazum, vytvareni cedulek a teleportaci
+# -------------------
+
+# Sign layout
+# Use %number% as a placeholder for the treasure number
+sign:
+  easy:
+    line1: "&0[&1Poklad&0]"
+    line2: "&a#%number%"
+    line3: "&aEASY"
+    line4: "&f&nKlikni"
+  normal:
+    line1: "&0[&1Poklad&0]"
+    line2: "&3#%number%"
+    line3: "&3NORMAL"
+    line4: "&f&nKlikni"
+  hard:
+    line1: "&0[&1Poklad&0]"
+    line2: "&c#%number%"
+    line3: "&cHARD"
+    line4: "&f&nKlikni"
+
+# Rewards for finding treasures
+# These commands will be executed by the console
+rewards:
+  easy:
+    - "eco give %player% 20"
+  normal:
+    - "eco give %player% 30"
+  hard:
+    - "eco give %player% 50"
+
+# GUI settings
+gui:
+  # Use %player% to show the name of the player whose treasures are being viewed
+  title: "&1Poklady: &0%player%"
+  item_name: "&bPoklad #%number%"
+  item_lore:
+    found:
+      - "&6Typ: &e%type%"
+      - "&6Nalezeno: &e%date%"
+      - ""
+      - "&aNalezeno"
+    not_found:
+      - "&6Typ: &e%type%"
+      - ""
+      - "&cNenalezeno"
+  materials:
+    easy:
+      found: "COPPER_BLOCK"
+      not_found: "BARRIER"
+    normal:
+      found: "EXPOSED_COPPER"
+      not_found: "BARRIER"
+    hard:
+      found: "OXIDIZED_COPPER"
+      not_found: "BARRIER"
+  pagination:
+    previous_page:
+      material: "ARROW"
+      name: "&ePredchozi strana"
+    next_page:
+      material: "ARROW"
+      name: "&eDalsi strana"
+    close:
+      material: "BARRIER"
+      name: "&cZavrit menu"
+    info:
+      material: "PAPER"
+      name: "&fStrana &b%current% &fz &b%total%"
+
+# General settings
+general:
+  timezone: "Europe/Prague" # Timezone for date display. e.g. "Europe/Prague", "America/New_York", or "UTC". A list can be found at https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  default_difficulty: 1 # Default difficulty if not specified on the sign (1=easy, 2=normal, 3=hard)
+
+# Log settings
+log_file_path: "logs/found_treasures.log"
+
+# Database settings
+database:
+  type: "sqlite" # sqlite or mysql
+  server_id: "lobby" # Unique identifier for this server when using a shared database
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "minicraft_lobby_treasure"
+    table: "treasures_found"
+    username: "user"
+    password: "password"

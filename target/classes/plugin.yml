@@ -1,0 +1,14 @@
+name: MinicraftLobbyTreasure
+version: '1.0-SNAPSHOT'
+main: cz.minicraft.minicraftlobbytreasure.MinicraftLobbyTreasure
+api-version: '1.20'
+author: [jara]
+description: Plugin for treasures in lobby
+commands:
+  mcpoklad:
+    description: Main command for MinicraftLobbyTreasure
+    aliases: [poklad]
+permissions:
+  mcpoklad.admin:
+    description: Allows to create treasures and use admin commands
+    default: op

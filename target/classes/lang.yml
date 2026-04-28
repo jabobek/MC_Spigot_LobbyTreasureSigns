@@ -1,0 +1,49 @@
+# Language file for MinicraftLobbyTreasure
+# All messages are in Czech without diacritics
+
+prefix: "&6&lPOKLADY &f- "
+
+# Messages for finding treasures
+treasure:
+  found:
+    easy: "&eNasel jsi &aEASY &epoklad! Ziskavas &b20&e coins."
+    normal: "&eNasel jsi &2NORMAL &epoklad! Ziskavas &b30&e coins."
+    hard: "&eNasel jsi &cHARD &epoklad! Ziskavas &b50&e coins."
+  already_found: "&eTento poklad jsi jiz nasel."
+
+# Command messages
+command:
+  no_permission: "&eNemas opravneni pro tento prikaz."
+  player_only: "&eTento prikaz muze pouzit pouze hrac."
+  treasure_not_found: "&ePoklad s timto cislem neexistuje."
+  teleported: "&eTeleportoval ses k pokladu cislo &b%number%&e."
+  teleport_no_permission: "&eNemas opravneni se teleportovat k pokladum."
+  confirm_deletion: "&eZadej /mcpoklad confirm pro smazani pokladu."
+  deletion_successful: "&ePoklad byl uspesne smazan."
+  no_pending_deletion: "&eNemas zadny poklad k smazani."
+  gui_no_teleport_permission: "&eNemas opravneni se teleportovat k pokladum."
+  player_not_found: "&cHrac &b%player% &cnebyl nalezen."
+  help_player:
+    - "&7------------------------------------------------"
+    - " &6&lMINIPASS &f• &eSeznam prikazu"
+    - ""
+    - " &b/mcpoklad gui &e- &6Otevre menu s poklady"
+    - "&7------------------------------------------------"
+  help_admin:
+    - "&7------------------------------------------------"
+    - " &6&lMINIPASS &f• &eSeznam prikazu (Admin)"
+    - ""
+    - " &6/mcpoklad gui [hrac] &7- Otevre menu pokladu hrace"
+    - " &6/mcpoklad tp <ID> &7- Teleport k pokladu"
+    - " &6/mcpoklad confirm &7- Potvrdi smazani pokladu"
+    - ""
+    - " &7Pro vytvoreni pokladu: &f[poklad] &7na 1. radek cedulky,"
+    - " &7na 2. radek typ &f1-3 &7(easy, normal, hard)."
+    - "&7------------------------------------------------"
+
+# Sign messages
+sign:
+  created: "&eUspesne jsi vytvoril poklad s cislem &b%number%&e."
+  id_already_exists: "&cPoklad s ID &b%id% &cjiz existuje."
+  invalid_type: "&cNeplatny typ pokladu. Pouzij 1 (easy), 2 (normal), 3 (hard)."
+  no_permission: "&cNemas opravneni k vytvareni pokladu."

@@ -1,0 +1,49 @@
+# Language file for MinicraftLobbyTreasure
+# All messages are in English
+
+prefix: "&6&lTREASURES &f- "
+
+# Messages for finding treasures
+treasure:
+  found:
+    easy: "&eYou found an &aEASY &etreasure! You received &b20&e coins."
+    normal: "&eYou found a &2NORMAL &etreasure! You received &b30&e coins."
+    hard: "&eYou found a &cHARD &etreasure! You received &b50&e coins."
+  already_found: "&eYou have already found this treasure."
+
+# Command messages
+command:
+  no_permission: "&eYou do not have permission to use this command."
+  player_only: "&eThis command can only be used by a player."
+  treasure_not_found: "&eTreasure with this number does not exist."
+  teleported: "&eYou have been teleported to treasure number &b%number%&e."
+  teleport_no_permission: "&eYou do not have permission to teleport to treasures."
+  confirm_deletion: "&eType /mctreasure confirm to delete the treasure."
+  deletion_successful: "&eTreasure has been successfully deleted."
+  no_pending_deletion: "&eYou have no treasure pending deletion."
+  gui_no_teleport_permission: "&eYou do not have permission to teleport to treasures."
+  player_not_found: "&cPlayer &b%player% &cwas not found."
+  help_player:
+    - "&7------------------------------------------------"
+    - " &6&lTREASURES &f• &eCommand List"
+    - ""
+    - " &b/mctreasure gui &e- &6Opens the treasure menu"
+    - "&7------------------------------------------------"
+  help_admin:
+    - "&7------------------------------------------------"
+    - " &6&lTREASURES &f• &eCommand List (Admin)"
+    - ""
+    - " &6/mctreasure gui [player] &7- Opens a player's treasure menu"
+    - " &6/mctreasure tp <ID> &7- Teleport to a treasure"
+    - " &6/mctreasure confirm &7- Confirms treasure deletion"
+    - ""
+    - " &7To create a treasure: &f[treasure] &7on the 1st line of a sign,"
+    - " &7on the 2nd line type &f1-3 &7(easy, normal, hard)."
+    - "&7------------------------------------------------"
+
+# Sign messages
+sign:
+  created: "&eYou have successfully created treasure number &b%number%&e."
+  id_already_exists: "&cTreasure with ID &b%id% &calready exists."
+  invalid_type: "&cInvalid treasure type. Use 1 (easy), 2 (normal), 3 (hard)."
+  no_permission: "&cYou do not have permission to create treasures."
